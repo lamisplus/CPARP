@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_step_one"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/personalDetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/TextViewLarge"
+                android:text="@string/date_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+            <EditText
+                android:id="@+id/date_visit"
+                style="@style/TextBox"
+                android:hint="Encounter Date"
+                android:focusable="false" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/TextViewLarge"
+                android:text="@string/question5_label" />
+
+            <Spinner
+                android:id="@+id/question5"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/TextViewLarge"
+                android:text="@string/question6_label" />
+
+            <Spinner
+                android:id="@+id/question6"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/TextViewLarge"
+                android:text="@string/question7_label" />
+
+            <Spinner
+                android:id="@+id/question7"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/TextViewLarge"
+                android:text="@string/question8_label" />
+
+            <Spinner
+                android:id="@+id/question8"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/TextViewLarge"
+                android:text="@string/question9_label" />
+
+            <Spinner
+                android:id="@+id/question9"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/TextView"
+                android:text="@string/regimen1_label"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/regimen1"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/TextViewLarge"
+                android:text="@string/duration1_label" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+            <EditText
+                android:id="@+id/duration1"
+                style="@style/TextBox"
+                android:hint="Duration in days  (medicine 1)"
+                android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView14"
+                style="@style/TextViewLarge"
+                android:text="@string/prescribed1_label" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+            <EditText
+                android:id="@+id/prescribed1"
+                style="@style/TextBox"
+                android:hint="Quantity Prescribed (medicine 1)"
+                android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/TextViewLarge"
+                android:text="@string/dispensed1_label" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+            <EditText
+                android:id="@+id/dispensed1"
+                style="@style/TextBox"
+                android:hint="Quantity Dispensed (medicine 1)"
+                android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/TextViewLarge"
+                android:text="@string/regimen2_label"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/regimen2"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown" />
+
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/TextViewLarge"
+                android:text="@string/duration2_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/duration2"
+                    style="@style/TextBox"
+                    android:hint="Duration in days (medicine 2)"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView18"
+                style="@style/TextViewLarge"
+                android:text="@string/prescribed2_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/prescribed2"
+                    style="@style/TextBox"
+                    android:hint="Quantity Prescribed (medicine 2)"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView19"
+                style="@style/TextViewLarge"
+                android:text="@string/dispensed2_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/dispensed2"
+                    style="@style/TextBox"
+                    android:hint="Quantity Dispensed (medicine 2)"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/TextView"
+                android:text="@string/regimen3_label"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/regimen3"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown" />
+
+            <TextView
+                android:id="@+id/textView21"
+                style="@style/TextView"
+                android:text="@string/duration3_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/duration3"
+                    style="@style/TextBox"
+                    android:hint="Duration in days (medicine 3)"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView22"
+                style="@style/TextView"
+                android:text="@string/prescribed3_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/prescribed3"
+                    style="@style/TextBox"
+                    android:hint="Quantity Prescribed (medicine 3)"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView23"
+                style="@style/TextViewLarge"
+                android:text="@string/dispensed3_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/dispensed3"
+                    style="@style/TextBox"
+                    android:hint="Quantity Dispensed (medicine 3)"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView24"
+                style="@style/TextViewLarge"
+                android:text="@string/regimen4_label"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/regimen4"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown" />
+
+            <TextView
+                android:id="@+id/textView25"
+                style="@style/TextViewLarge"
+                android:text="@string/duration4_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/duration4"
+                    style="@style/TextBox"
+                    android:hint="Duration in days (medicine 4)"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView26"
+                style="@style/TextView"
+                android:text="@string/prescribed4_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/prescribed4"
+                    style="@style/TextBox"
+                    android:hint="Quantity Prescribed (medicine 4)"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView27"
+                style="@style/TextViewLarge"
+                android:text="@string/dispensed4_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/dispensed4"
+                    style="@style/TextBox"
+                    android:hint="Quantity Dispensed (medicine 4)"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView28"
+                style="@style/TextViewLarge"
+                android:text="@string/notes_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/notes"
+                    style="@style/TextBox"
+                    android:focusable="false"
+                    android:hint="Any concerns" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView29"
+                style="@style/TextView"
+                android:text="@string/next_refill_label" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/next_refill"
+                    style="@style/TextBox"
+                    android:focusable="false"
+                    android:hint="Date of next ARV refill" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="20sp"
+                android:background="@drawable/blue_button"
+                android:layout_marginTop="20dp"
+                android:elevation="2dp"
+                android:textColor="@android:color/white"
+                android:onClick="onClickSaveButton"
+                android:text="@string/save_button_label" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

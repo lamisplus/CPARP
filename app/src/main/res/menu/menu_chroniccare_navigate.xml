@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item android:id="@+id/action_navigate_backward"
+        android:title="Previous"
+        android:icon="@drawable/prev"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_navigate_forward"
+        android:title="Next"
+        android:icon="@drawable/next"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_tb_screening"
+        android:title="TB Screening"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_nutritional_status"
+        android:title="Nutritional Status"
+        android:orderInCategory="4"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_gender_based_violence"
+        android:title="Gender Based Violence"
+        android:orderInCategory="5"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_chronic_condition"
+        android:title="Chronic Condition"
+        android:orderInCategory="6"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_positive_health"
+        android:title="Positive Health Dignity and Prevention"
+        android:orderInCategory="7"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_additional_services"
+        android:title="Additional Services Provided"
+        android:orderInCategory="8"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_reproductive_intention"
+        android:title="Reproductive Intentions"
+        android:orderInCategory="9"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_malaria_prevention"
+        android:title="Malaria Prevention"
+        android:orderInCategory="10"
+        app:showAsAction="never" />
+</menu>

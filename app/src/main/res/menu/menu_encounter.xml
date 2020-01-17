@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.fhi360.mobile.cparp.EncounterActivity">
+
+    <item android:id="@+id/action_delete"
+        android:title="Delete"
+        android:icon="@drawable/ic_delete"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_new"
+        android:title="New"
+        android:icon="@drawable/ic_note_add"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+
+</menu>

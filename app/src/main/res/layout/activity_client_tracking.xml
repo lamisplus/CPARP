@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_step_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/personalDetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:text="Date Tracked"
+        style="@style/TextViewLarge" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingTop="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edit_text_background"
+            >
+    <EditText
+        android:id="@+id/date_tracked"
+        style="@style/TextBox"
+        android:focusable="false" />
+        </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:text="Type of Tracking"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/type_tracking"
+        style="@style/TextBox"
+        android:background="@drawable/bg_dropdown"
+        android:entries="@array/spinner_tracker" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:text="Tracking Outcome"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/tracking_outcome"
+        style="@style/TextBox"
+        android:background="@drawable/bg_dropdown"
+        android:entries="@array/spinner_outcome" />
+
+    <LinearLayout
+        android:id="@+id/agreed_yes"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:text="Next Agreed Date"
+        style="@style/TextViewLarge" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingTop="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edit_text_background"
+            >
+    <EditText
+        android:id="@+id/date_agreed"
+        style="@style/TextBox"
+        android:focusable="false" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:text="@string/save_button_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:background="@drawable/blue_button"
+        android:layout_marginTop="10dp"
+        android:elevation="2dp"
+        android:textColor="@android:color/white"
+        android:onClick="onClickSaveButton" />
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

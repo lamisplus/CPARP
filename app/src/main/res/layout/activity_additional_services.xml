@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_step_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/personalDetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+
+    <CheckBox
+            android:id="@+id/additional_service1"
+            android:text="@string/additional_service1_label"
+            style="@style/TextViewMedium" />
+
+        <CheckBox
+            android:id="@+id/additional_service2"
+            android:text="@string/additional_service2_label"
+            style="@style/TextViewMedium" />
+
+        <CheckBox
+            android:id="@+id/additional_service3"
+            android:text="@string/additional_service3_label"
+            style="@style/TextViewMedium" />
+
+        <CheckBox
+            android:id="@+id/additional_service4"
+            android:text="@string/additional_service4_label"
+            style="@style/TextViewMedium" />
+
+        <CheckBox
+            android:id="@+id/additional_service5"
+            android:text="@string/additional_service5_label"
+            style="@style/TextViewMedium" />
+
+        <CheckBox
+            android:id="@+id/additional_service6"
+            android:text="@string/additional_service6_label"
+            style="@style/TextViewMedium" />
+
+        <CheckBox
+            android:id="@+id/additional_service7"
+            android:text="@string/additional_service7_label"
+            style="@style/TextViewMedium" />
+
+        <CheckBox
+            android:id="@+id/additional_service8"
+            android:text="@string/additional_service8_label"
+            style="@style/TextViewMedium" />
+
+        <CheckBox
+            android:id="@+id/additional_service9"
+            android:text="@string/additional_service9_label"
+            style="@style/TextViewMedium" />
+
+        <CheckBox
+            android:id="@+id/additional_service10"
+            android:text="@string/additional_service10_label"
+            style="@style/TextViewMedium" />
+
+        <CheckBox
+            android:id="@+id/additional_service11"
+            android:text="@string/additional_service11_label"
+            style="@style/TextViewMedium" />
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

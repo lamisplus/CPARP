@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_step_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/personalDetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/TextViewLarge"
+                android:text="Date Discontinued" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/date_discontinued"
+                    style="@style/TextBox"
+                    android:hint="Date Discontinued"
+                    android:focusable="false" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/TextViewLarge"
+                android:text="Reason for Discontinuing Service" />
+
+
+            <Spinner
+                android:id="@+id/reason_discontinued"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_discontinue" />
+
+            <Button
+                android:id="@+id/save_button"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:background="@drawable/blue_button"
+                android:layout_marginTop="10dp"
+                android:elevation="2dp"
+                android:textColor="@android:color/white"
+                android:onClick="onClickSaveButton"
+                android:text="@string/save_button_label" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

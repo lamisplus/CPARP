@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="#fff"
+    >
+
+    <TextView
+        android:text="@string/sync_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/download_checkbox"
+        android:text="@string/download_checkbox_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#455a64"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/sync_button"
+        android:text="@string/sync_button_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:background="@drawable/blue_button"
+        android:layout_marginTop="10dp"
+        android:elevation="2dp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

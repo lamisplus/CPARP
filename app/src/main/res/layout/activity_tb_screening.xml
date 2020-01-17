@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_step_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/personalDetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView1"
+            android:text="@string/date_label"
+            android:layout_marginTop="16dp"
+            style="@style/TextViewLarge" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:paddingTop="2dp">
+        <EditText
+            android:id="@+id/date_visit"
+            android:layout_below="@+id/textView1"
+            style="@style/TextBox"
+            android:hint="Encounter Date"
+            android:focusable="false" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@+id/date_visit"
+            android:text="Are you currently on Isoniazid Preventive Therapy (IPT)?"
+            style="@style/TextViewLarge" />
+
+        <Spinner
+            android:id="@+id/ipt"
+            android:layout_below="@+id/textView2"
+            style="@style/TextBox"
+            android:background="@drawable/bg_dropdown"
+            android:entries="@array/spinner_yes_no"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_below="@+id/ipt"
+            android:text="Are you currently on TB treatment?"
+            style="@style/TextViewLarge" />
+
+        <Spinner
+            android:id="@+id/tb_treatment"
+            android:layout_below="@+id/textView3"
+            style="@style/TextBox"
+            android:background="@drawable/bg_dropdown"
+            android:entries="@array/spinner_yes_no" />
+
+        <LinearLayout
+            android:id="@+id/tb_treatment_yes"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tb_treatment"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:text="TB Treatment start date"
+                style="@style/TextViewLarge" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:paddingTop="2dp">
+            <EditText
+                android:id="@+id/date_started_tb_treatment"
+                style="@style/TextBox"
+                android:hint="TB Treatment start date"
+                android:focusable="false" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tb_treatment_no"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tb_treatment_yes"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:text="Have you been coughing for 2 weeks or more?"
+                style="@style/TextViewLarge" />
+
+            <Spinner
+                android:id="@+id/tb_value1"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:text="Do you have fever for 2 weeks or more?"
+                style="@style/TextViewLarge" />
+
+            <Spinner
+                android:id="@+id/tb_value2"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:text="Are you losing weight?"
+                style="@style/TextViewLarge" />
+
+            <Spinner
+                android:id="@+id/tb_value3"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:text="Are you having night sweats?"
+                style="@style/TextViewLarge" />
+
+            <Spinner
+                android:id="@+id/tb_value4"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:text="Do you have any swellings in the neck or ampit?"
+                style="@style/TextViewLarge" />
+
+            <Spinner
+                android:id="@+id/tb_value5"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/outcome_tb"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tb_treatment_no"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:text="Refered client for TB diagnosis:"
+                style="@style/TextViewLarge" />
+
+            <Spinner
+                android:id="@+id/tb_referred"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/outcome_ipt"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/outcome_tb"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:text="Eligible for IPT:"
+                style="@style/TextViewLarge" />
+
+            <Spinner
+                android:id="@+id/eligible_ipt"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

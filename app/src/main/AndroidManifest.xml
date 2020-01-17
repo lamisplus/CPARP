@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.fhi360.lamis.mobile.cparp">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name="org.fhi360.lamis.mobile.cparp.LoginActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.MainActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.LoginActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.ClientProfileActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.EncounterActivity"
+            android:label="@string/title_add_encounter"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.DrugRefillActivity"
+            android:label="@string/title_add_encounter"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.DrugTherapyActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.SearchDrugTherapyActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.DiscontinueServiceActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.SearchEncounterActivity"
+            android:label="@string/title_search_encounter"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.SearchChroniccareActivity"
+            android:label="@string/title_search_encounter"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.SearchClientTrackingActivity"
+            android:label="@string/title_search_encounter"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.TbScreeningActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.NutritionalStatusActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.GenderBasedViolenceActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.ChronicConditionActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.PositiveHealthActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.AdditionalServicesActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.ReproductiveIntentionsActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.MalariaPreventionActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.ClientProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value="org.fhi360.lamis.mobile.cparp.ClientProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.DefaulterListActivity"
+            android:label="@string/title_activity_defaulter"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.ClientTrackingActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.DefaulterListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.DefaulterListActivity" />
+        </activity>
+
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.ServiceSummaryActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.fhi360.lamis.mobile.cparp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.fhi360.lamis.mobile.cparp.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="org.fhi360.lamis.mobile.cparp.CreateUserActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <service
+            android:name="org.fhi360.lamis.mobile.cparp.service.IntentServiceHandler"
+            android:exported="false" />
+
+        <receiver
+            android:name="org.fhi360.lamis.mobile.cparp.service.BroadcastReceiverHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

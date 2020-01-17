@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_step_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/personalDetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:text="A) Prevent HIV Transmission"
+        android:textStyle="bold"
+        style="@style/TextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="How many doses of ARVs have you missed since the last appointment? (If on ART)"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/phdp1"
+        android:layout_below="@+id/textView2"
+        style="@style/TextBox"
+        android:background="@drawable/bg_dropdown"
+        android:entries="@array/spinner_phdp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:text="Medication adherence counseling done?"
+        android:layout_below="@+id/phdp1"
+        style="@style/TextViewLarge" />
+
+        <Spinner
+            android:id="@+id/phdp1_services_provided"
+            android:layout_below="@+id/textView3"
+            style="@style/TextBox"
+            android:background="@drawable/bg_dropdown"
+            android:entries="@array/spinner_yes_no" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:text="Have you disclosed your status to your partner(s)?"
+        android:layout_below="@+id/phdp1_services_provided"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/phdp2"
+        android:layout_below="@+id/textView4"
+        style="@style/TextBox"
+        android:background="@drawable/bg_dropdown"
+        android:entries="@array/spinner_yes_no" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:text="Do you know the status of your partner(s)?"
+        android:layout_below="@+id/phdp2"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/phdp3"
+        android:layout_below="@+id/textView5"
+        style="@style/TextBox"
+        android:background="@drawable/bg_dropdown"
+        android:entries="@array/spinner_yes_no" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:text="Do you use condoms during every sexual encounter?"
+        android:layout_below="@+id/phdp3"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/phdp4"
+        android:layout_below="@+id/textView6"
+        style="@style/TextBox"
+        android:background="@drawable/bg_dropdown"
+        android:entries="@array/spinner_yes_no" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:text="Condom use counseling done?"
+        android:layout_below="@+id/phdp4"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/phdp4_services_provided"
+        android:layout_below="@+id/textView7"
+        style="@style/TextBox"
+        android:background="@drawable/bg_dropdown"
+        android:entries="@array/spinner_yes_no" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:text="B) Prevent Diseases/Opportunistic Infections"
+        android:layout_below="@+id/phdp4_services_provided"
+        android:textStyle="bold"
+        style="@style/TextView" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:text="Do you/partner have genital sores/rash/pain/discharge/bleeding?"
+        android:layout_below="@+id/textView8"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/phdp5"
+        android:layout_below="@+id/textView9"
+        android:background="@drawable/bg_dropdown"
+        style="@style/TextBox"
+        android:entries="@array/spinner_yes_no" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:text="How many doses of cotrimoxazole have you missed since the last appointment?"
+        android:layout_below="@+id/phdp5"
+        style="@style/TextViewLarge" />
+
+    <EditText
+        android:id="@+id/phdp6"
+        android:layout_below="@+id/textView10"
+        style="@style/TextBox"
+        android:background="@drawable/edit_text_background"
+        android:hint="How many doses of cotrimoxazole"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:text="B) Promote Healthy Living"
+        android:layout_below="@+id/phdp6"
+        android:textStyle="bold"
+        style="@style/TextViewLarge" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:text="How regularly do you take alcohol in a week?"
+        android:layout_below="@+id/textView11"
+        style="@style/TextViewLarge" />
+
+    <EditText
+        android:id="@+id/phdp7"
+        android:layout_below="@+id/textView12"
+        style="@style/TextBox"
+        android:background="@drawable/edit_text_background"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:text="Nutritional counseling done?"
+        android:layout_below="@+id/phdp7"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/phdp7_services_provided"
+        android:layout_below="@+id/textView13"
+        style="@style/TextBox"
+        android:background="@drawable/bg_dropdown"
+        android:entries="@array/spinner_yes_no" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:text="WASH counseling done?"
+        android:layout_below="@+id/phdp7_services_provided"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/phdp8_services_provided"
+        android:layout_below="@+id/textView14"
+        style="@style/TextBox"
+        android:background="@drawable/bg_dropdown"
+        android:entries="@array/spinner_yes_no" />
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_step_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/personalDetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:text="Body Weight (kg):"
+        android:layout_marginTop="16dp"
+        style="@style/TextViewLarge" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/body_weight1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:paddingTop="2dp">
+    <EditText
+        android:id="@+id/body_weight"
+        android:layout_below="@+id/textView1"
+        style="@style/TextBox"
+        android:hint="Body Weight (kg)"
+        android:inputType="number|numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="Height (m):"
+        android:layout_below="@+id/body_weight1"
+        style="@style/TextViewLarge" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/height1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:paddingTop="2dp">
+    <EditText
+        android:id="@+id/height"
+        android:layout_below="@+id/textView2"
+        style="@style/TextBox"
+        android:hint="Height (m)"
+        android:inputType="number|numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:id="@+id/adult"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/height1"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:text="BMI (Adult):"
+            style="@style/TextViewLarge" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:paddingTop="2dp">
+        <EditText
+            android:id="@+id/bmi"
+            style="@style/TextBox"
+            android:hint="BMI (Adult)"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+        <Spinner
+            android:id="@+id/bmi_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_dropdown"
+            android:entries="@array/spinner_bmi" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pediatrics"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/adult"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:text="MUAC (under 5yrs):"
+            style="@style/TextViewLarge" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/muac1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:paddingTop="2dp">
+        <EditText
+            android:id="@+id/muac"
+            style="@style/TextBox"
+            android:hint="MUAC (under 5yrs)"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+        <Spinner
+            android:id="@+id/muac_category"
+            style="@style/TextBox"
+            android:background="@drawable/bg_dropdown"
+            android:entries="@array/spinner_muac" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/supplement"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pediatrics"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:text="Provided with therapeutic/supplementary food:"
+            android:layout_below="@+id/pediatrics"
+            style="@style/TextViewLarge" />
+
+        <Spinner
+            android:id="@+id/supplementary_food"
+            android:layout_below="@+id/textView5"
+            style="@style/TextBox"
+            android:background="@drawable/bg_dropdown"
+            android:entries="@array/spinner_yes_no" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:text="Referred:"
+        android:layout_below="@+id/supplement"
+        style="@style/TextViewLarge" />
+
+    <Spinner
+        android:id="@+id/nutritional_status_referred"
+        android:layout_below="@+id/textView6"
+        style="@style/TextBox"
+        android:background="@drawable/bg_dropdown"
+        android:entries="@array/spinner_yes_no" />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.fhi360.mobile.cparp.MainActivity">
+
+    <item android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+
+    <item android:id="@+id/action_logout"
+        android:title="Log Out"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+</menu>

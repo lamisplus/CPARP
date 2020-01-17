@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.fhi360.mobile.cparp.ClientProfileActivity">
+
+    <item android:id="@+id/action_encounter"
+        android:title="@string/action_refill"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_chroniccare"
+        android:title="@string/action_chroniccare"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_drugtherapy"
+        android:title="@string/action_drugtherapy"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_discontinue"
+        android:title="@string/action_discontinue"
+        android:orderInCategory="4"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_refill_history"
+        android:title="@string/action_refill_history"
+        android:orderInCategory="5"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_chroniccare_history"
+        android:title="@string/action_chroniccare_history"
+        android:orderInCategory="6"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_drugtherapy_history"
+        android:title="@string/action_drugtherapy_history"
+        android:orderInCategory="7"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_clienttracking_history"
+        android:title="@string/action_clienttracking_history"
+        android:orderInCategory="8"
+        app:showAsAction="never" />
+</menu>

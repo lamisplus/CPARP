@@ -1,0 +1,13 @@
+Key Store:  password 	-	aloziestore
+CPARP:    password	-	cparpv1
+
+Google Play Console	-	Gozie0103*   
+
+
+
+Key Store: passsword    -     aloziestore
+LAMISlite: password     -     aloziestore
+
+
+C:\Users\aalozie\AppData\Local\Android\Sdk
+
